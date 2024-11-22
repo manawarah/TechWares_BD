@@ -1,0 +1,68 @@
+html{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container{}
+.div-tipografia{}
+.nav-tipografia{}
+.ol-tipografia{
+    display: flex;
+    list-style: none;
+}
+.li-tipografia{
+    margin: 1%;
+}
+.clienteDuvidas{
+    display: flex;
+    justify-content: space-evenly;
+}
+.duvidas{
+    display: grid;
+}
+.btn-duvidas{
+    background-color: #CA0404;
+    color: white;
+    width: 150%;
+    margin-top: 1%;
+    padding: 19px;
+    text-align: start;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+}
+.btn-duvidas:hover{
+    background-color: #424242;
+    transition: 0.5s;
+    outline: 2px solid #CA0404;
+}
+
+/**/
+
+.menu{
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+}
+.menubtn:hover{
+    background-color: transparent
+}
+.menubtn{
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 5px;
+    width: 70px;
+}
+.menuopc{
+    display: none;
+}
+.menu:hover .menuopc{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    display: grid;
+}

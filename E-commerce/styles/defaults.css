@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+:root{
+
+    --color-back: #303030;
+}
+*{
+
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+    font-family: Poetsen One;
+    outline: none;
+}
+html{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    
+    height: 100vh;
+    max-width: 1280px;
+    background-color: var(--color-back);
+}
+header{
+
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+/* Cabeçalho/Header do site */
+
+.cabecalho{
+    justify-content: space-evenly;
+    height: 15%;
+    color: white;
+}
+.nav-bar{
+    display: flex;
+    margin-right: 100px;
+}
+.nav-div{
+    margin-left: 20px;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+.nav-link:hover{
+    color: red;
+    text-decoration: underline;
+    transition: .3s;
+    
+}
+.btn-carrinho{
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn-carrinho:hover{
+    background-color: #008000b8;
+    transition: 0.3s;
+}
+
+.box-promo{
+
+    
+    width: 250px;
+    height: 350px;
+    box-shadow: 0px 0px 7px black;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    cursor: pointer;
+    
+    background-color: #424242;
+}
+.box-promo:hover{
+
+    transition: .4s;
+    transform: scale(1.02);
+}
+.img-promo{
+
+    background-color: black;
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+.desc-promo{
+
+    
+    text-align: center;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+/* Adicionar retiências caso ultrapsse 2 linhas */
+    height: 40px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+.desc-promo:hover{
+    text-decoration: underline;
+}
+.price{
+    margin: auto 10px;
+    font-size: 13px;
+    color: white;
+}
+.dPrice{
+
+    font-size: 25px;
+    color: green;
+}
+.divideCartao{
+
+    font-size: 14px;
+    color: white;
+}
+.title-page{
+
+    width: 100%;
+    padding-left: 50px;
+    color: rgb(208, 38, 38);
+    font-size: 25px;
+    margin: 40px auto;
+}
+.placeholder-center::placeholder{
+
+    text-align: center;
+}
+@media (max-width: 768px){
+
+    .img{
+
+        display: none;
+    }
+    .nav-bar{
+
+        margin: 0;
+    }
+    nav div a{
+
+        font-size: 10px;
+    }
+}

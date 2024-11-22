@@ -1,0 +1,135 @@
+
+/* Opções/Filtro do site */
+.box-search{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search{    
+
+    display: flex;
+    width: 300px;
+    height: 50px;
+}
+.select-opt{
+    padding: 10px;
+    background-color: #424242;
+    color: #9F9F9F;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.pesquisar{ 
+    width: 40%;
+    padding: 10px;
+    background-color: #424242;
+    color: #9F9F9F;
+    border-radius: 5px;
+}
+.pesquisar:focus{
+
+    transition: .3s;
+    outline: 1px solid red;
+    box-shadow: 0px 0px 5px red;
+} 
+.select-opt:focus{
+
+    transition: .3s;
+    outline: 1px solid red;
+    box-shadow: 0px 0px 5px red;
+}
+
+/* Info */
+
+.section-info{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info{
+
+    width: 300px;
+    height: 250px;
+    box-shadow: 0px 0px 7px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin: 30px;
+}
+.icon-info{
+
+    font-size: 60px;
+    color: white;
+}
+.text-info{
+
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+.logo-txt{
+    display: flex;
+}
+.txt{
+    background-color: #424242;
+    width: 40%;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-left: -04%;
+    margin-top: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.btn-sobrenos{
+    background-color: #E90313;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+.itens-promo{
+    width: 50%;
+}
+.promo{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.btn-vermais{
+    margin-left: 45%;
+    border-radius: 50px;
+    font-size: 24pt;
+    margin-top: 10px;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+ul{
+    list-style: none;
+    margin: auto 50px;
+}
+li{
+
+    color: white;
+}
