@@ -57,6 +57,9 @@ $name = $return['nome'] ?? '';
                         <a href='logoff.php' class='nav-link'>SAIR</a>
                         <br>
                     </div>
+                    <button class='btn-carrinho'>
+                        <i class='fa-solid fa-cart-shopping fa-lg' style='color: white;'></i>
+                    </button>
                 </nav>
 
             ";
@@ -86,9 +89,7 @@ $name = $return['nome'] ?? '';
             ";
         }
         ?>
-        <button class="btn-carrinho">
-            <i class="fa-solid fa-cart-shopping fa-lg" style="color: white;"></i>
-        </button>
+        
     </header>
 
     <!-- Opções/Filtro do site -->
@@ -122,7 +123,7 @@ $name = $return['nome'] ?? '';
                 echo "
                     <div class='box-promo'>
                         <img src='$pPhoto' alt='' class='img-promo'>
-                        <a href='product/cartao.php?id=$pId' class='desc-promo' title='$pName'>
+                        <a href='preview/preview.php?id=$pId' class='desc-promo' title='$pName'>
                             $pName
                         </a>
                         <del class='price'>R$$exPrice</del>
@@ -169,7 +170,7 @@ $name = $return['nome'] ?? '';
                 echo "
                 <div class='box-promo'>
                     <img src='$pPhoto2' alt='' class='img-promo'>
-                    <a href='product/cartao.php?id=$pId2' class='desc-promo' title='$pName2'>
+                    <a href='preview/preview.php?id=$pId2' class='desc-promo' title='$pName2'>
                         $pName2
                     </a>
                     <del class='price'>R$$exPrice</del>

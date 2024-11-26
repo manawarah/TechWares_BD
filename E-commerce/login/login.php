@@ -35,7 +35,7 @@
     <div style="width: 600px; display: flex; justify-content: center; align-items: center;">
         <form action="config.php" method="post">
             <label for="email">E-mail:</label>
-            <input type="text" name="email" class="" value="<?php echo "$email" ?>
+            <input type="text" name="email" class="" value="<?php echo "$email" ?>">
             <label for="password">Senha:</label>
             <input type="password" name="password" class="">
             <input type="submit" value="Entrar" name='submit'>

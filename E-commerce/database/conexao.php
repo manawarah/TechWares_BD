@@ -1,7 +1,7 @@
 <?php
-    $dbHost = 'Localhost';
+    $dbHost = 'localhost';
     $dbUser = 'root';
-    $dbPassword = '';
+    $dbPassword = 'unipe';
     $dbName = 'techwarejp';
 
     $conexao = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
