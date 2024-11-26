@@ -54,7 +54,7 @@ $name = $return['nome'] ?? '';
                     </div>
                     <div class='nav-div' style='color: #e90313;'>
                         <i class='fa-solid fa-right-from-bracket fa-lg'></i>
-                        <a href='logoff.php' class='nav-link'>SAIR</a>
+                        <a href='logoff.php' class='nav-link' style='margin: 0 10px'>SAIR</a>
                         <br>
                     </div>
                     <button class='btn-carrinho'>

@@ -44,39 +44,39 @@
 
     <form action="<?= $_SERVER['PHP_SELF']?>" method="post" onsubmit="return register()">
         <div>
-            <label for="name">Nome:</label>
+            <label for="name">Nome: *</label>
             <input type="text" name='name' placeholder="Nome Completo" class="placeholder-center" value="<?php echo"$name"?>">
-            <p class="msg-error msg-nome"></p>
+            <p class="msg-error" id="msg-nome"></p>
             <br><br>
-            <label for="email">Email:</label>
+            <label for="email">Email: *</label>
             <input type="email" name="email" placeholder="Digite seu e-mail" class="placeholder-center" value="<?php echo"$email"?>">
-            <p class="msg-error msg-email"></p>
+            <p class="msg-error" id="msg-email"></p>
             <br><br>
-            <label for="phone">Telefone:</label>
+            <label for="phone">Telefone: *</label>
             <input type="tel" name="phone" placeholder="Digite seu telefone" class="placeholder-center" value="<?php echo"$tel"?>">
-            <p class="msg-error msg-phone"></p>
+            <p class="msg-error" id="msg-phone"></p>
             <br><br>
-            <label for="senha">Senha:</label>
+            <label for="senha">Senha: *</label>
             <input type="password" name="pass" placeholder="Digite sua senha" class="placeholder-center">
-            <p class="msg-error msg-pass"></p>
+            <p class="msg-error" id="msg-pass"></p>
             
         </div>
         <div>
-            <label for="cpf">CPF:</label>
+            <label for="cpf">CPF: *</label>
             <input type="text" name="cpf" placeholder="Digite seu CPF" class="placeholder-center" value="<?php echo"$cpf"?>">
-            <p class="msg-error msg-cpf"></p>
+            <p class="msg-error" id="msg-cpf"></p>
             <br><br>
-            <label for="cep">CEP:</label>
+            <label for="cep">CEP: *</label>
             <input type="number" name="cep" placeholder="Digite seu CEP" class="placeholder-center" value="<?php echo"$cep"?>">
-            <p class="msg-error msg-cep"></p>
+            <p class="msg-error" id="msg-cep"></p>
             <br><br>
             <label for="address">Endereço:</label>
             <input type="text" name="address"  placeholder="Digite seu Endereço" class="placeholder-center" value="<?php echo"$address"?>">
             <p class="msg-error msg-address"></p>
             <br><br>
-            <label for="rsenha">Confirme a sua senha:</label>
+            <label for="rsenha">Confirme a sua senha: *</label>
             <input type="password" name="rpass" placeholder="Confirme a sua senha" class="placeholder-center">
-            <p class="msg-error msg-rpass"></p>
+            <p class="msg-error" id="msg-rpass"></p>
         </div>
         <input type="submit" value="Registrar" name='submit' onclick="register()">
     </form>
