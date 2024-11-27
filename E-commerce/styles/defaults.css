@@ -59,15 +59,11 @@ header{
     
 }
 .btn-carrinho{
-    background-color: green;
+    background-color: #E90313;
     color: white;
     padding: 15px;
     border-radius: 20px;
     cursor: pointer;
-}
-.btn-carrinho:hover{
-    background-color: #008000b8;
-    transition: 0.3s;
 }
 
 .box-promo{
