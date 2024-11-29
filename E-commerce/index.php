@@ -54,9 +54,12 @@ $name = $return['nome'] ?? '';
                     </div>
                     <div class='nav-div' style='color: #e90313;'>
                         <i class='fa-solid fa-right-from-bracket fa-lg'></i>
-                        <a href='logoff.php' class='nav-link'>SAIR</a>
+                        <a href='logoff.php' class='nav-link' style='margin: 0 10px'>SAIR</a>
                         <br>
                     </div>
+                    <button class='btn-carrinho'>
+                        <i class='fa-solid fa-cart-shopping fa-lg' style='color: white;'></i>
+                    </button>
                 </nav>
 
             ";
@@ -86,9 +89,7 @@ $name = $return['nome'] ?? '';
             ";
         }
         ?>
-        <button class="btn-carrinho">
-            <i class="fa-solid fa-cart-shopping fa-lg" style="color: white;"></i>
-        </button>
+        
     </header>
 
     <!-- Opções/Filtro do site -->
@@ -122,7 +123,7 @@ $name = $return['nome'] ?? '';
                 echo "
                     <div class='box-promo'>
                         <img src='$pPhoto' alt='' class='img-promo'>
-                        <a href='product/cartao.php?id=$pId' class='desc-promo' title='$pName'>
+                        <a href='preview/preview.php?id=$pId' class='desc-promo' title='$pName'>
                             $pName
                         </a>
                         <del class='price'>R$$exPrice</del>
@@ -139,7 +140,7 @@ $name = $return['nome'] ?? '';
 
     <section class="section-info">
         <h1 class="title-page">
-            Informações
+            Informações Adicionais
         </h1>
         <div class="info">
             <h1 class="text-info">FRETE GRÁTIS EM TODAS AS SUAS COMPRAS</h1>
@@ -150,12 +151,12 @@ $name = $return['nome'] ?? '';
             <i class="fa-user fa-solid icon-info"></i>
         </div>
         <div class="info">
-            <h1 class="text-info">MONTE SEU PC DIRETO DA SUA CASA</h1>
+            <h1 class="text-info">RECEBA SEU PC MONTADO</h1>
             <i class="fa-computer fa-solid icon-info"></i>
         </div>
     </section>
     <section class="promo">
-        <h1 class="title-page">Aproveite a nossa <span style="color: white; font-size: 25px;">Queima de Estoque</span></h1>
+        <h1 class="title-page">Aproveite a nossa <span style="color: white; font-size: 25px;">🔥Queima de Estoque🔥</span></h1>
         <?php
             $sql = mysqli_query($conexao, 'SELECT * FROM produtos LIMIT 12 OFFSET 8');
             while($pro2 = $sql->fetch_assoc()){
@@ -169,7 +170,7 @@ $name = $return['nome'] ?? '';
                 echo "
                 <div class='box-promo'>
                     <img src='$pPhoto2' alt='' class='img-promo'>
-                    <a href='product/cartao.php?id=$pId2' class='desc-promo' title='$pName2'>
+                    <a href='preview/preview.php?id=$pId2' class='desc-promo' title='$pName2'>
                         $pName2
                     </a>
                     <del class='price'>R$$exPrice</del>
