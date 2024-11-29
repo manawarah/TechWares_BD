@@ -140,7 +140,7 @@ $name = $return['nome'] ?? '';
 
     <section class="section-info">
         <h1 class="title-page">
-            Informações
+            Informações Adicionais
         </h1>
         <div class="info">
             <h1 class="text-info">FRETE GRÁTIS EM TODAS AS SUAS COMPRAS</h1>
@@ -151,12 +151,12 @@ $name = $return['nome'] ?? '';
             <i class="fa-user fa-solid icon-info"></i>
         </div>
         <div class="info">
-            <h1 class="text-info">MONTE SEU PC DIRETO DA SUA CASA</h1>
+            <h1 class="text-info">RECEBA SEU PC MONTADO</h1>
             <i class="fa-computer fa-solid icon-info"></i>
         </div>
     </section>
     <section class="promo">
-        <h1 class="title-page">Aproveite a nossa <span style="color: white; font-size: 25px;">Queima de Estoque</span></h1>
+        <h1 class="title-page">Aproveite a nossa <span style="color: white; font-size: 25px;">🔥Queima de Estoque🔥</span></h1>
         <?php
             $sql = mysqli_query($conexao, 'SELECT * FROM produtos LIMIT 12 OFFSET 8');
             while($pro2 = $sql->fetch_assoc()){
