@@ -34,11 +34,19 @@ header{
     align-items: center;
     padding-left: 10px;
 }
-/* Cabeçalho/Header do site */
 
+.errors{
+    color: #E90313;
+    width: 100%;
+    text-align: center;
+}
+
+/* Cabeçalho/Header do site */
+header{
+    margin-top: 30px;
+}
 .cabecalho{
     justify-content: space-evenly;
-    height: 15%;
     color: white;
 }
 .nav-bar{
@@ -71,7 +79,6 @@ header{
     
     width: 250px;
     height: 350px;
-    box-shadow: 0px 0px 7px black;
     margin: 20px;
     border-radius: 10px;
     display: flex;
@@ -104,6 +111,7 @@ header{
     color: white;
     text-decoration: none;
 /* Adicionar retiências caso ultrapsse 2 linhas */
+
     height: 40px;
     display: -webkit-box;
     -webkit-line-clamp: 2;

@@ -34,7 +34,7 @@
             <div style="display: flex; margin: 30px 0;">
                 <a href="../product/cartao.php?id=<?= $id ?>" class="btn-comprar">R$ <?= str_replace(".", ",", $produto["preco"]) ?></a>
                 <button class="btn-carrinho">
-                    <i class='fa-solid fa-cart-shopping fa-lg' style='color: white;'></i>
+                    <a href="../carrinho/carrinho.php" class='fa-solid fa-cart-shopping fa-lg' style='color: white; text-decoration: none;'></a>
                 </button>
             </div>
         </section>

@@ -10,16 +10,19 @@
         $return = $conexao->query($sql);
 
         if(mysqli_num_rows($return) > 0){
-            header('Location: ../index.php');
             $_SESSION['email'] = $email;
             $_SESSION['senha'] = $senha;
+            header('Location: ../index.php');
         } else {
-            header('Location: login.php');
             unset($_SESSION['email']);
             unset($_SESSION['senha']);
+
+            header('Location: login.php?err=1');
         }
     } else {
 
         header('Location: login.php');
     }
+
+    exit();
 ?>

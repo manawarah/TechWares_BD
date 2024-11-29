@@ -1,4 +1,5 @@
 <?php
+
     $email = $_POST['email'] ?? '';
 ?>
 <!DOCTYPE html>
@@ -39,6 +40,11 @@
             <label for="password">Senha:</label>
             <input type="password" name="password" class="">
             <input type="submit" value="Entrar" name='submit'>
+            <?php  
+                if(!empty($_GET["err"])){
+                    echo "<p class='errors'>As credenciais estão incorretas</p>";
+                }
+            ?>
             <a href="" class="resetPass">Esqueci minha senha</a>
             <span class='line'></span>
             <a href="../register/register.php" class="btn-register">

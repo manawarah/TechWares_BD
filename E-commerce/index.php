@@ -58,7 +58,7 @@ $name = $return['nome'] ?? '';
                         <br>
                     </div>
                     <button class='btn-carrinho'>
-                        <i class='fa-solid fa-cart-shopping fa-lg' style='color: white;'></i>
+                        <a href='carrinho/carrinho.php' class='fa-solid fa-cart-shopping fa-lg' style='color: white; text-decoration: none;'></a>
                     </button>
                 </nav>
 
