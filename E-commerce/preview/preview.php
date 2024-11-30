@@ -19,6 +19,26 @@
     <link rel="stylesheet" href="../styles/defaults.css">
     <link rel="stylesheet" href="../fontawesome/css/all.min.css">
     <title><?= $produto["nome"] ?></title>
+    <script>
+        function adicionarAoCarrinho(produtoId) {
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "../carrinho/adicionar.php", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        alert("Produto adicionado ao carrinho!");
+                        // Atualizar a interface do carrinho, se necessário
+                    } else {
+                        alert("Erro ao adicionar produto ao carrinho.");
+                    }
+                }
+            };
+
+            xhr.send("produto_id=" + produtoId + "&quantidade=1");
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -33,8 +53,8 @@
             <p><?= $produto["descricao"] ?></p>
             <div style="display: flex; margin: 30px 0;">
                 <a href="../product/cartao.php?id=<?= $id ?>" class="btn-comprar">R$ <?= str_replace(".", ",", $produto["preco"]) ?></a>
-                <button class="btn-carrinho">
-                    <a href="../carrinho/carrinho.php" class='fa-solid fa-cart-shopping fa-lg' style='color: white; text-decoration: none;'></a>
+                <button class="btn-carrinho" onclick="adicionarAoCarrinho(<?= $id ?>)">
+                    <i class='fa-solid fa-cart-shopping fa-lg' style='color: white;'></i>
                 </button>
             </div>
         </section>
