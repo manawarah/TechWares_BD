@@ -206,10 +206,10 @@ $name = $return['nome'] ?? '';
         </ul>
         <ul>
             <li style="color: red;">Outros</li>
-            <li>Ganhe dinheiro conosco</li>
-            <li>Venda no e-commerce</li>
+            <li>Receba dinheiro conosco</li>
+            <li>Realize vendas no e-commerce</li>
             <li>Proteja e construa o seu PC</li>
-            <li>Anuncie seus Produtos</li>
+            <li>Anuncie os seus Produtos</li>
         </ul>
     </footer>
 </body>
