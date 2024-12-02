@@ -14,7 +14,7 @@ $name = $return['nome'] ?? '';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <!-- O arquivo default.css serve para guardar estilos que serão usados várias vezes em outras páginas -->
+    <!-- O arquivo default.css tem como função armazenar/salvar estilos que serão usados em várias ocasiões em outras páginas -->
     <link rel="stylesheet" href="styles/defaults.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <title>TechWare</title>
