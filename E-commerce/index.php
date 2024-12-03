@@ -14,7 +14,7 @@ $name = $return['nome'] ?? '';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <!-- O arquivo default.css serve para guardar estilos que serão usados várias vezes em outras páginas -->
+    <!-- O arquivo default.css tem como função armazenar/salvar estilos que serão usados em várias ocasiões em outras páginas -->
     <link rel="stylesheet" href="styles/defaults.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <title>TechWare</title>
@@ -38,7 +38,7 @@ $name = $return['nome'] ?? '';
                         <i class='fa-solid fa-circle-question fa-lg' style='color: #e90313;'></i>
                         <span style='font-size: 10pt;'>ATENDIMENTO</span>
                         <br>
-                        <a class='nav-link' href='cliente/cliente.php'>AO CLIENTE</a>
+                        <a class='nav-link' href='./sac/sac.php'>AO CLIENTE</a>
                     </div>
                     <div class='nav-div'>
                         <i class='fa-solid fa-star fa-lg' style='color: #e90313;'></i>
@@ -76,7 +76,7 @@ $name = $return['nome'] ?? '';
                         <i class='fa-solid fa-circle-question fa-lg' style='color: #e90313;'></i>
                         <span style='font-size: 10pt;'>ATENDIMENTO</span>
                         <br>
-                        <a class='nav-link' href='/cliente/cliente.html'>AO CLIENTE</a>
+                        <a class='nav-link' href='./sac/sac.php'>AO CLIENTE</a>
                     </div>
                     <div class='nav-div'>
                         <i class='fa-solid fa-star fa-lg' style='color: #e90313;'></i>
@@ -206,10 +206,10 @@ $name = $return['nome'] ?? '';
         </ul>
         <ul>
             <li style="color: red;">Outros</li>
-            <li>Ganhe dinheiro conosco</li>
-            <li>Venda no e-commerce</li>
+            <li>Receba dinheiro conosco</li>
+            <li>Realize vendas no e-commerce</li>
             <li>Proteja e construa o seu PC</li>
-            <li>Anuncie seus Produtos</li>
+            <li>Anuncie os seus Produtos</li>
         </ul>
     </footer>
 </body>
