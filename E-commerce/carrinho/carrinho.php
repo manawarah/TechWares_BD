@@ -101,7 +101,7 @@ while ($produto = mysqli_fetch_assoc($sql)) {
     <section>
         <?php 
             if (empty($produtos)) {
-                echo "<p class='msg' style='margin: 50px 0; color: white;'>Não tem produtos no carrinho</p>";
+                echo "<p class='msg'>Não tem produtos no carrinho</p>";
             } else {
                 foreach ($produtos as $produto) {
                     echo "<div class='produto'>";
@@ -121,7 +121,7 @@ while ($produto = mysqli_fetch_assoc($sql)) {
     <section class="footer-rodape">
         <div>
             <h1 style="color: white; padding: 0 0 10px 10px; font-size: 30px;">Total: R$ <?php echo number_format($total, 2, ',', '.'); ?></h1>
-            <a href="../product/compraFinalizada.php" class="btn-comprar">Comprar</a>
+            <a href="../product/cartao.php" class="btn-comprar">Comprar</a>
         </div>
     </section>
 </main>
