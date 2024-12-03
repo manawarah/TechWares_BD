@@ -38,7 +38,7 @@ $name = $return['nome'] ?? '';
                         <i class='fa-solid fa-circle-question fa-lg' style='color: #e90313;'></i>
                         <span style='font-size: 10pt;'>ATENDIMENTO</span>
                         <br>
-                        <a class='nav-link' href='cliente/cliente.php'>AO CLIENTE</a>
+                        <a class='nav-link' href='./sac/sac.php'>AO CLIENTE</a>
                     </div>
                     <div class='nav-div'>
                         <i class='fa-solid fa-star fa-lg' style='color: #e90313;'></i>
@@ -76,7 +76,7 @@ $name = $return['nome'] ?? '';
                         <i class='fa-solid fa-circle-question fa-lg' style='color: #e90313;'></i>
                         <span style='font-size: 10pt;'>ATENDIMENTO</span>
                         <br>
-                        <a class='nav-link' href='/cliente/cliente.html'>AO CLIENTE</a>
+                        <a class='nav-link' href='./sac/sac.php'>AO CLIENTE</a>
                     </div>
                     <div class='nav-div'>
                         <i class='fa-solid fa-star fa-lg' style='color: #e90313;'></i>
